@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Complexity Visualizer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📈 Time Complexity Visualizer</h1>
+
+<p>Move the slider to change the value of <b>n</b></p>
+
+<input type="range" id="nSlider" min="1" max="100" value="10">
+
+<h2>n = <span id="value">10</span></h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>O(1)</h3>
+<p id="o1"></p>
+</div>
+
+<div class="card">
+<h3>O(log n)</h3>
+<p id="olog"></p>
+</div>
+
+<div class="card">
+<h3>O(n)</h3>
+<p id="on"></p>
+</div>
+
+<div class="card">
+<h3>O(n log n)</h3>
+<p id="onlog"></p>
+</div>
+
+<div class="card">
+<h3>O(n²)</h3>
+<p id="on2"></p>
+</div>
+
+</div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
